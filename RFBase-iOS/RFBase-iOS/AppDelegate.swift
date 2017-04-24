@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    RFBase.with(apiKey: "abdc", baseUrlString: "http://b2582d3e.ngrok.io/api/v1/post")
     return true
   }
 

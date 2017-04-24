@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39ABB16B1EAD11E200B95A52 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABB16A1EAD11E200B95A52 /* CalendarController.swift */; };
+		39ABB16D1EAD157800B95A52 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABB16C1EAD157800B95A52 /* CalendarViewController.swift */; };
+		39ABB16F1EAD160C00B95A52 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABB16E1EAD160C00B95A52 /* BioViewController.swift */; };
+		39CF1AC11EA2CF95006BA1B3 /* BioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CF1AC01EA2CF95006BA1B3 /* BioController.swift */; };
 		39EEC8B41EA0F12C00E86D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8B31EA0F12C00E86D1C /* AppDelegate.swift */; };
-		39EEC8B61EA0F12C00E86D1C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8B51EA0F12C00E86D1C /* FirstViewController.swift */; };
-		39EEC8B81EA0F12C00E86D1C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8B71EA0F12C00E86D1C /* SecondViewController.swift */; };
 		39EEC8BB1EA0F12C00E86D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EEC8B91EA0F12C00E86D1C /* Main.storyboard */; };
 		39EEC8BD1EA0F12C00E86D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EEC8BC1EA0F12C00E86D1C /* Assets.xcassets */; };
 		39EEC8C01EA0F12C00E86D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EEC8BE1EA0F12C00E86D1C /* LaunchScreen.storyboard */; };
 		39EEC8CB1EA0F12C00E86D1C /* RFBase_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8CA1EA0F12C00E86D1C /* RFBase_iOSTests.swift */; };
 		39EEC8D61EA0F12C00E86D1C /* RFBase_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8D51EA0F12C00E86D1C /* RFBase_iOSUITests.swift */; };
+		39EEC8E61EA0F26000E86D1C /* PostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8E51EA0F26000E86D1C /* PostsController.swift */; };
+		39EEC8EA1EA0F31900E86D1C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8E91EA0F31900E86D1C /* Utils.swift */; };
+		39EEC8EC1EA0F4C300E86D1C /* RFBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8EB1EA0F4C300E86D1C /* RFBase.swift */; };
+		39EEC8EF1EA0F6A100E86D1C /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8EE1EA0F6A100E86D1C /* PostsViewController.swift */; };
+		39EEC8F11EA0F6FE00E86D1C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8F01EA0F6FE00E86D1C /* Error.swift */; };
+		39EEC8F41EA0F72900E86D1C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEC8F31EA0F72900E86D1C /* ErrorView.swift */; };
+		A2ED2ED28F7894701544B92D /* Pods_RFBase_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8870A0245EF33FD1BCE0CFBC /* Pods_RFBase_iOS.framework */; };
+		D827C1E0608F53CF8525FB84 /* Pods_RFBase_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8B99121F5D62499A5FD8C3 /* Pods_RFBase_iOSTests.framework */; };
+		FC1822A05789CD155DFBB708 /* Pods_RFBase_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FB95045A78EBDAD135D477 /* Pods_RFBase_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39ABB16A1EAD11E200B95A52 /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		39ABB16C1EAD157800B95A52 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = Core/ViewControllers/CalendarViewController.swift; sourceTree = "<group>"; };
+		39ABB16E1EAD160C00B95A52 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BioViewController.swift; path = Core/ViewControllers/BioViewController.swift; sourceTree = "<group>"; };
+		39CF1AC01EA2CF95006BA1B3 /* BioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BioController.swift; path = Core/Controllers/BioController.swift; sourceTree = "<group>"; };
 		39EEC8B01EA0F12C00E86D1C /* RFBase-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RFBase-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EEC8B31EA0F12C00E86D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39EEC8B51EA0F12C00E86D1C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		39EEC8B71EA0F12C00E86D1C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		39EEC8BA1EA0F12C00E86D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39EEC8BC1EA0F12C00E86D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39EEC8BF1EA0F12C00E86D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +62,22 @@
 		39EEC8D11EA0F12C00E86D1C /* RFBase-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RFBase-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EEC8D51EA0F12C00E86D1C /* RFBase_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFBase_iOSUITests.swift; sourceTree = "<group>"; };
 		39EEC8D71EA0F12C00E86D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EEC8E31EA0F1EE00E86D1C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		39EEC8E51EA0F26000E86D1C /* PostsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsController.swift; path = Core/Controllers/PostsController.swift; sourceTree = "<group>"; };
+		39EEC8E91EA0F31900E86D1C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Core/Utils/Utils.swift; sourceTree = "<group>"; };
+		39EEC8EB1EA0F4C300E86D1C /* RFBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RFBase.swift; path = Core/RFBase.swift; sourceTree = "<group>"; };
+		39EEC8EE1EA0F6A100E86D1C /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsViewController.swift; path = Core/ViewControllers/PostsViewController.swift; sourceTree = "<group>"; };
+		39EEC8F01EA0F6FE00E86D1C /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		39EEC8F31EA0F72900E86D1C /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorView.swift; path = Core/Views/ErrorView.swift; sourceTree = "<group>"; };
+		3A8B99121F5D62499A5FD8C3 /* Pods_RFBase_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RFBase_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB08BA4BC67A6FB0A73005C /* Pods-RFBase-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFBase-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RFBase-iOSUITests/Pods-RFBase-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62041D46598D76CDF263F63E /* Pods-RFBase-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFBase-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RFBase-iOS/Pods-RFBase-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		62FB95045A78EBDAD135D477 /* Pods_RFBase_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RFBase_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8870A0245EF33FD1BCE0CFBC /* Pods_RFBase_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RFBase_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90666D259674EC8D602ED2C4 /* Pods-RFBase-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFBase-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RFBase-iOS/Pods-RFBase-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9D766B81B5526FD23C701201 /* Pods-RFBase-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFBase-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RFBase-iOSTests/Pods-RFBase-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAADCFF5CAF065F8B1B8A5D4 /* Pods-RFBase-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFBase-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RFBase-iOSTests/Pods-RFBase-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA574F0E5D132E32F0D794D0 /* Pods-RFBase-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFBase-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RFBase-iOSUITests/Pods-RFBase-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2ED2ED28F7894701544B92D /* Pods_RFBase_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D827C1E0608F53CF8525FB84 /* Pods_RFBase_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +101,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1822A05789CD155DFBB708 /* Pods_RFBase_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F09B2A0D5B4B23B40C6AFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8870A0245EF33FD1BCE0CFBC /* Pods_RFBase_iOS.framework */,
+				3A8B99121F5D62499A5FD8C3 /* Pods_RFBase_iOSTests.framework */,
+				62FB95045A78EBDAD135D477 /* Pods_RFBase_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39EEC8A71EA0F12C00E86D1C = {
 			isa = PBXGroup;
 			children = (
+				39EEC8E41EA0F23700E86D1C /* Core */,
+				39EEC8E31EA0F1EE00E86D1C /* Podfile */,
 				39EEC8B21EA0F12C00E86D1C /* RFBase-iOS */,
 				39EEC8C91EA0F12C00E86D1C /* RFBase-iOSTests */,
 				39EEC8D41EA0F12C00E86D1C /* RFBase-iOSUITests */,
 				39EEC8B11EA0F12C00E86D1C /* Products */,
+				477662CF801E78FC1B4DEABC /* Pods */,
+				20F09B2A0D5B4B23B40C6AFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				39EEC8B31EA0F12C00E86D1C /* AppDelegate.swift */,
-				39EEC8B51EA0F12C00E86D1C /* FirstViewController.swift */,
-				39EEC8B71EA0F12C00E86D1C /* SecondViewController.swift */,
 				39EEC8B91EA0F12C00E86D1C /* Main.storyboard */,
 				39EEC8BC1EA0F12C00E86D1C /* Assets.xcassets */,
 				39EEC8BE1EA0F12C00E86D1C /* LaunchScreen.storyboard */,
@@ -128,6 +172,68 @@
 			path = "RFBase-iOSUITests";
 			sourceTree = "<group>";
 		};
+		39EEC8E41EA0F23700E86D1C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				39EEC8F21EA0F71600E86D1C /* Views */,
+				39EEC8ED1EA0F68700E86D1C /* ViewControllers */,
+				39EEC8E81EA0F2E500E86D1C /* Utils */,
+				39EEC8E71EA0F29E00E86D1C /* Controllers */,
+				39EEC8EB1EA0F4C300E86D1C /* RFBase.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		39EEC8E71EA0F29E00E86D1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				39EEC8E51EA0F26000E86D1C /* PostsController.swift */,
+				39ABB16A1EAD11E200B95A52 /* CalendarController.swift */,
+				39CF1AC01EA2CF95006BA1B3 /* BioController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		39EEC8E81EA0F2E500E86D1C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39EEC8E91EA0F31900E86D1C /* Utils.swift */,
+				39EEC8F01EA0F6FE00E86D1C /* Error.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		39EEC8ED1EA0F68700E86D1C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				39EEC8EE1EA0F6A100E86D1C /* PostsViewController.swift */,
+				39ABB16C1EAD157800B95A52 /* CalendarViewController.swift */,
+				39ABB16E1EAD160C00B95A52 /* BioViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		39EEC8F21EA0F71600E86D1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39EEC8F31EA0F72900E86D1C /* ErrorView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		477662CF801E78FC1B4DEABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62041D46598D76CDF263F63E /* Pods-RFBase-iOS.debug.xcconfig */,
+				90666D259674EC8D602ED2C4 /* Pods-RFBase-iOS.release.xcconfig */,
+				9D766B81B5526FD23C701201 /* Pods-RFBase-iOSTests.debug.xcconfig */,
+				EAADCFF5CAF065F8B1B8A5D4 /* Pods-RFBase-iOSTests.release.xcconfig */,
+				3BB08BA4BC67A6FB0A73005C /* Pods-RFBase-iOSUITests.debug.xcconfig */,
+				FA574F0E5D132E32F0D794D0 /* Pods-RFBase-iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39EEC8DA1EA0F12C00E86D1C /* Build configuration list for PBXNativeTarget "RFBase-iOS" */;
 			buildPhases = (
+				D4C56566FAAF0779BB45ADE2 /* [CP] Check Pods Manifest.lock */,
 				39EEC8AC1EA0F12C00E86D1C /* Sources */,
 				39EEC8AD1EA0F12C00E86D1C /* Frameworks */,
 				39EEC8AE1EA0F12C00E86D1C /* Resources */,
+				E94ADDB8E86B7652222E73A8 /* [CP] Embed Pods Frameworks */,
+				10480377C3DC2EA477886766 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39EEC8DD1EA0F12C00E86D1C /* Build configuration list for PBXNativeTarget "RFBase-iOSTests" */;
 			buildPhases = (
+				F5C5AFF519F31DB60ECED59E /* [CP] Check Pods Manifest.lock */,
 				39EEC8C21EA0F12C00E86D1C /* Sources */,
 				39EEC8C31EA0F12C00E86D1C /* Frameworks */,
 				39EEC8C41EA0F12C00E86D1C /* Resources */,
+				A180816CF3BEAA4E4733BE87 /* [CP] Embed Pods Frameworks */,
+				95D0CEC5350FCC397FDA67E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39EEC8E01EA0F12C00E86D1C /* Build configuration list for PBXNativeTarget "RFBase-iOSUITests" */;
 			buildPhases = (
+				877C8082260AAB38893CC05A /* [CP] Check Pods Manifest.lock */,
 				39EEC8CD1EA0F12C00E86D1C /* Sources */,
 				39EEC8CE1EA0F12C00E86D1C /* Frameworks */,
 				39EEC8CF1EA0F12C00E86D1C /* Resources */,
+				4A8493F79F5A1244ED7208EA /* [CP] Embed Pods Frameworks */,
+				5D972C625FD4A14FA0E4832F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +375,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10480377C3DC2EA477886766 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RFBase-iOS/Pods-RFBase-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8493F79F5A1244ED7208EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RFBase-iOSUITests/Pods-RFBase-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D972C625FD4A14FA0E4832F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RFBase-iOSUITests/Pods-RFBase-iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877C8082260AAB38893CC05A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95D0CEC5350FCC397FDA67E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RFBase-iOSTests/Pods-RFBase-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A180816CF3BEAA4E4733BE87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RFBase-iOSTests/Pods-RFBase-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C56566FAAF0779BB45ADE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E94ADDB8E86B7652222E73A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RFBase-iOS/Pods-RFBase-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C5AFF519F31DB60ECED59E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39EEC8AC1EA0F12C00E86D1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39EEC8B81EA0F12C00E86D1C /* SecondViewController.swift in Sources */,
+				39ABB16D1EAD157800B95A52 /* CalendarViewController.swift in Sources */,
+				39EEC8F11EA0F6FE00E86D1C /* Error.swift in Sources */,
+				39EEC8EF1EA0F6A100E86D1C /* PostsViewController.swift in Sources */,
+				39ABB16F1EAD160C00B95A52 /* BioViewController.swift in Sources */,
+				39EEC8EA1EA0F31900E86D1C /* Utils.swift in Sources */,
+				39EEC8EC1EA0F4C300E86D1C /* RFBase.swift in Sources */,
+				39CF1AC11EA2CF95006BA1B3 /* BioController.swift in Sources */,
+				39EEC8E61EA0F26000E86D1C /* PostsController.swift in Sources */,
 				39EEC8B41EA0F12C00E86D1C /* AppDelegate.swift in Sources */,
-				39EEC8B61EA0F12C00E86D1C /* FirstViewController.swift in Sources */,
+				39ABB16B1EAD11E200B95A52 /* CalendarController.swift in Sources */,
+				39EEC8F41EA0F72900E86D1C /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +680,7 @@
 		};
 		39EEC8DB1EA0F12C00E86D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62041D46598D76CDF263F63E /* Pods-RFBase-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5R8859U8W9;
@@ -432,6 +694,7 @@
 		};
 		39EEC8DC1EA0F12C00E86D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90666D259674EC8D602ED2C4 /* Pods-RFBase-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5R8859U8W9;
@@ -445,6 +708,7 @@
 		};
 		39EEC8DE1EA0F12C00E86D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D766B81B5526FD23C701201 /* Pods-RFBase-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +724,7 @@
 		};
 		39EEC8DF1EA0F12C00E86D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAADCFF5CAF065F8B1B8A5D4 /* Pods-RFBase-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +740,7 @@
 		};
 		39EEC8E11EA0F12C00E86D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB08BA4BC67A6FB0A73005C /* Pods-RFBase-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5R8859U8W9;
@@ -489,6 +755,7 @@
 		};
 		39EEC8E21EA0F12C00E86D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA574F0E5D132E32F0D794D0 /* Pods-RFBase-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5R8859U8W9;
@@ -520,6 +787,7 @@
 				39EEC8DC1EA0F12C00E86D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39EEC8DD1EA0F12C00E86D1C /* Build configuration list for PBXNativeTarget "RFBase-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +796,7 @@
 				39EEC8DF1EA0F12C00E86D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39EEC8E01EA0F12C00E86D1C /* Build configuration list for PBXNativeTarget "RFBase-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +805,7 @@
 				39EEC8E21EA0F12C00E86D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
