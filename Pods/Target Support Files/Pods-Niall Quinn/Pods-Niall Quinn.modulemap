@@ -1,0 +1,6 @@
+framework module Pods_Niall_Quinn {
+  umbrella header "Pods-Niall Quinn-umbrella.h"
+
+  export *
+  module * { export * }
+}
