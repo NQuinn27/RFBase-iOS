@@ -10,8 +10,8 @@ import UIKit
 import WebKit
 import Turbolinks
 
-class CalendarController: UINavigationController {
-  fileprivate var url = URL(string:"http://rfbase.herokuapp.com/api/v1/calendar")!
+class MediaController: UINavigationController {
+  fileprivate var url = URL(string:"http://rfbase.herokuapp.com/api/v1/media")!
   fileprivate let webViewProcessPool = WKProcessPool()
   
   fileprivate var application: UIApplication {
@@ -38,7 +38,7 @@ class CalendarController: UINavigationController {
     self.navigationBar.barTintColor = Theme.sharedInstance.primaryColor
     self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Theme.sharedInstance.primaryInverseColor]
     self.navigationBar.tintColor = Theme.sharedInstance.primaryInverseColor
-    url = URL(string:URLUtils.calendarUrlString())!
+    url = URL(string:URLUtils.mediaUrlString())!
     presentVisitableForSession(session, url: url)
   }
   
@@ -54,8 +54,7 @@ class CalendarController: UINavigationController {
   }
   
   fileprivate func presentVisitableForSession(_ session: Session, url: URL, action: Action = .Advance) {
-    let visitable = CalendarViewController(url: url)
-  
+    let visitable = MediaViewController(url: url)
     if action == .Advance {
       pushViewController(visitable, animated: true)
     } else if action == .Replace {
@@ -67,14 +66,14 @@ class CalendarController: UINavigationController {
   }
 }
 
-extension CalendarController: SessionDelegate {
+extension MediaController: SessionDelegate {
   func session(_ session: Session, didProposeVisitToURL URL: Foundation.URL, withAction action: Action) {
     presentVisitableForSession(session, url: URL, action: action)
   }
   
   func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, withError error: NSError) {
     NSLog("ERROR: %@", error)
-    guard let viewController = visitable as? NewsViewController, let errorCode = ErrorCode(rawValue: error.code) else { return }
+    guard let viewController = visitable as? MediaViewController, let errorCode = ErrorCode(rawValue: error.code) else { return }
     
     switch errorCode {
     case .httpFailure:
@@ -99,7 +98,7 @@ extension CalendarController: SessionDelegate {
   }
 }
 
-extension CalendarController: WKScriptMessageHandler {
+extension MediaController: WKScriptMessageHandler {
   func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
     if let message = message.body as? String {
       let alertController = UIAlertController(title: "Turbolinks", message: message, preferredStyle: .alert)

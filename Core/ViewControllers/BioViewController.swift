@@ -4,5 +4,6 @@ import UIKit
 class BioViewController: BaseViewController {
   override func visitableDidRender() {
     title = "Bio"
+    self.edgesForExtendedLayout = []
   }
 }

@@ -1,6 +1,6 @@
-class CalendarViewController: BaseViewController {
+class MediaViewController: BaseViewController {
   override func visitableDidRender() {
-    title = "Calendar"
+    title = "Media"
     self.edgesForExtendedLayout = []
   }
 }

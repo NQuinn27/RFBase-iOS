@@ -1,7 +1,9 @@
 PODS:
+  - SwiftyJSON (3.1.4)
   - Turbolinks (2.0.0)
 
 DEPENDENCIES:
+  - SwiftyJSON
   - Turbolinks (from `https://github.com/turbolinks/turbolinks-ios.git`)
 
 EXTERNAL SOURCES:
@@ -14,8 +16,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/turbolinks/turbolinks-ios.git
 
 SPEC CHECKSUMS:
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Turbolinks: 3f60819d36350d872b436dc22497a1050c144b95
 
-PODFILE CHECKSUM: d06e21ee60246e548a8e23af705960ebc1fd1eb8
+PODFILE CHECKSUM: 8f9dc39c5fda7a9f6ca1d20c17af1f88a12ed71e
 
 COCOAPODS: 1.2.0

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,16 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    _ = RFBase(apiKey: "97fc5679-63be-4981-9121-68735c8927f0")
+    UIApplication.shared.statusBarStyle = .lightContent
+    
+    let center = UNUserNotificationCenter.current()
+    center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+      // actions based on whether notifications were authorized or not
+      
+    }
+    application.registerForRemoteNotifications()
+    
     // Override point for customization after application launch.
-    UINavigationBar.appearance().backgroundColor = UIColor(red:0.06, green:0.61, blue:0.95, alpha:1.00)
-    UIBarButtonItem.appearance().tintColor = UIColor.white
-    //Since iOS 7.0 UITextAttributeTextColor was replaced by NSForegroundColorAttributeName
-    UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-    UITabBar.appearance().backgroundColor = UIColor.white
-    UITabBar.appearance().tintColor = UIColor(red:0.06, green:0.61, blue:0.95, alpha:1.00)
-
     return true
   }
+  
+  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    var token = ""
+    for i in 0..<deviceToken.count {
+      token = token + String(format: "%02.2hhx", arguments: [deviceToken[i]])
+    }
+    UserUtils.didRegisterForPush(push_token: token)
+  }
+  
+
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

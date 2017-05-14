@@ -10,7 +10,7 @@ import WebKit
 import Turbolinks
 
 class BioController: UINavigationController {
-  fileprivate let url = URL(string:"http://rfbase.herokuapp.com/api/v1/bio")!
+  fileprivate var url = URL(string:"http://rfbase.herokuapp.com/api/v1/bio")!
   fileprivate let webViewProcessPool = WKProcessPool()
   
   fileprivate var application: UIApplication {
@@ -33,10 +33,23 @@ class BioController: UINavigationController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationBar.barTintColor = UIColor(red:0.19, green:0.69, blue:0.84, alpha:1.00)
-    self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-    self.navigationBar.tintColor = UIColor.white
+    NotificationCenter.default.addObserver(self, selector: #selector(PostsController.updateTheme), name: NSNotification.Name(rawValue: "ThemeUpdate"), object: nil)
+    self.navigationBar.barTintColor = Theme.sharedInstance.primaryColor
+    self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Theme.sharedInstance.primaryInverseColor]
+    self.navigationBar.tintColor = Theme.sharedInstance.primaryInverseColor
+    url = URL(string:URLUtils.bioUrlString())!
     presentVisitableForSession(session, url: url)
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    RFBase.sharedInstance.fetchTheme()
+  }
+  
+  func updateTheme() {
+    self.navigationBar.barTintColor = Theme.sharedInstance.primaryColor
+    self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Theme.sharedInstance.primaryInverseColor]
+    self.navigationBar.tintColor = Theme.sharedInstance.primaryInverseColor
+    self.view.setNeedsDisplay()
   }
   
   fileprivate func presentVisitableForSession(_ session: Session, url: URL, action: Action = .Advance) {
